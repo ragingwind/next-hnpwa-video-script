@@ -30,7 +30,7 @@ export default ({children}) => (
         ].map(m => {
           return <Menu
             key={m}
-            href={`/{m}`}
+            href={`/${m}`}
             label={m.toUpperCase()}
           />
         })
@@ -43,7 +43,7 @@ export default ({children}) => (
 			div {
 				width: 100%;
 				color: #333;
-				padding-top: 50px;
+				padding-top: 30px;
 			};
 		`}</style>
     <style global jsx>{`
