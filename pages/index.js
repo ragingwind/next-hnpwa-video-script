@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import Page from '../components/page'
+import Feeds from '../components/feeds'
 import fetch from '../lib/fetch'
 
 export default class extends Component {
@@ -14,9 +15,10 @@ export default class extends Component {
   render () {
     return (
       <Page>
-        {
-          this.props.feeds.map(f => <div>{f.title}</div>)
-        }
+        <Feeds
+          feeds={this.props.feeds}
+          url={this.props.url}
+        />
       </Page>
     )
   }
