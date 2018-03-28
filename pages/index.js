@@ -1,3 +1,8 @@
+import {Component} from 'react'
+import Page from '../components/page'
+
 export default () => (
-  <div>Welcome to Next.js</div>
+  <Page>
+    Feeds
+  </Page>
 )
