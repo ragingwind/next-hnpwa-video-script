@@ -15,7 +15,7 @@ const Feed = ({feed}) => (
             <a>{feed.user}</a>
           </Link>
         </span>
-        <span> | </span>
+        {feed.user && <span> | </span>}
         <span>
           <Link href={`/comments?id=${feed.is}`}>
             <a>{feed.comments_coint || 0} comments</a>
